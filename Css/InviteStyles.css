@@ -242,6 +242,7 @@ top: 200px;
 left: 200px;
 color: #FFF;
 font-family: 'Bebas Neue', cursive;
+
 }
 
 .text-box{
@@ -251,8 +252,16 @@ padding: 50px;
 @media only screen and (max-device-width: 1024px) {
   .parallax {
       background-attachment: scroll;
+     
   }
 }
+@media only screen and (max-device-width: 700px) {
+  .parallax {
+      background-attachment: scroll;
+     
+  }
+}
+
 
 @media screen and (min-device-width: 100px) and (max-device-width: 700px) { 
   #header h1{
@@ -261,6 +270,7 @@ padding: 50px;
     top: -100px;
     left: -150px;
 width: 100% !important;
+
     color: #FFF;
     font-family: 'Bebas Neue', cursive;
   }
@@ -275,6 +285,7 @@ width: 100% !important;
   display: inline-block;
   font-size:40px;
   color: #ffffff;
+ 
 }
 .indextext{
   font-family: 'Bebas Neue', cursive;
