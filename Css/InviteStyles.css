@@ -157,6 +157,15 @@ nav.fill ul li a:hover:after {
   /* padding: 14px 80px 18px 36px; */
   cursor: pointer;
 }
+.card{
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+  transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+  /* padding: 14px 80px 18px 36px; */
+  cursor: pointer;
+  padding: 10px 5px;
+}
 
 .cards:hover{
    transform: scale(1.05);
@@ -165,6 +174,11 @@ box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 
 .cards img{
   height: 250px;
+  right: 15px;
+
+}
+.card img{
+  height: auto;
   right: 15px;
 
 }
@@ -208,4 +222,61 @@ font-weight: 600;
 }
 .list{
 font-family: 'Roboto Slab', serif
+}
+
+
+.parallax{
+  background-image: url("../Assets/bio2-748x360.png");
+  min-height: 500px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+}
+
+#header{
+position: absolute;
+z-index: 1000;
+top: 200px;
+left: 200px;
+color: #FFF;
+font-family: 'Bebas Neue', cursive;
+}
+
+.text-box{
+height: 600px;
+padding: 50px;
+}
+@media only screen and (max-device-width: 1024px) {
+  .parallax {
+      background-attachment: scroll;
+  }
+}
+
+@media screen and (min-device-width: 100px) and (max-device-width: 700px) { 
+  #header h1{
+    position: absolute;
+    z-index: 1000;
+    top: -100px;
+    left: -150px;
+width: 100% !important;
+    color: #FFF;
+    font-family: 'Bebas Neue', cursive;
+  }
+}
+
+.dot {
+  background-color: #1A76D1;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  text-align: center;
+  display: inline-block;
+  font-size:40px;
+  color: #ffffff;
+}
+.indextext{
+  font-family: 'Bebas Neue', cursive;
+  margin-top: 10px;
 }
